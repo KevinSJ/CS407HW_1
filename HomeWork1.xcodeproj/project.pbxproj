@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		310048B61C6FB9C20090BBF8 /* firstQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310048B51C6FB9C20090BBF8 /* firstQuestionViewController.swift */; };
+		310048B81C6FBCAE0090BBF8 /* secondQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310048B71C6FBCAE0090BBF8 /* secondQuestionViewController.swift */; };
+		310048BA1C6FBD4E0090BBF8 /* thirdQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310048B91C6FBD4E0090BBF8 /* thirdQuestionViewController.swift */; };
+		310048BC1C6FBD700090BBF8 /* displayFinalResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310048BB1C6FBD700090BBF8 /* displayFinalResultViewController.swift */; };
+		310048BE1C6FBE270090BBF8 /* forthQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310048BD1C6FBE270090BBF8 /* forthQuestionViewController.swift */; };
+		310048C01C6FC6B80090BBF8 /* Lincoln_Bascom_12_1908.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 310048BF1C6FC6B80090BBF8 /* Lincoln_Bascom_12_1908.jpg */; };
 		31DC368E1C694B7B00F2C045 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DC368D1C694B7B00F2C045 /* AppDelegate.swift */; };
 		31DC36901C694B7B00F2C045 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DC368F1C694B7B00F2C045 /* ViewController.swift */; };
 		31DC36931C694B7B00F2C045 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31DC36911C694B7B00F2C045 /* Main.storyboard */; };
@@ -34,6 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		310048B51C6FB9C20090BBF8 /* firstQuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = firstQuestionViewController.swift; path = ../../../../../Patron/Documents/HomeWork_1/HomeWork1/HomeWork1/firstQuestionViewController.swift; sourceTree = "<group>"; };
+		310048B71C6FBCAE0090BBF8 /* secondQuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = secondQuestionViewController.swift; path = ../../../../../Patron/Documents/HomeWork_1/HomeWork1/HomeWork1/secondQuestionViewController.swift; sourceTree = "<group>"; };
+		310048B91C6FBD4E0090BBF8 /* thirdQuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = thirdQuestionViewController.swift; path = ../../../../../Patron/Documents/HomeWork_1/HomeWork1/HomeWork1/thirdQuestionViewController.swift; sourceTree = "<group>"; };
+		310048BB1C6FBD700090BBF8 /* displayFinalResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = displayFinalResultViewController.swift; path = ../../../../../Patron/Documents/HomeWork_1/HomeWork1/HomeWork1/displayFinalResultViewController.swift; sourceTree = "<group>"; };
+		310048BD1C6FBE270090BBF8 /* forthQuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = forthQuestionViewController.swift; path = ../../../../../Patron/Documents/HomeWork_1/HomeWork1/HomeWork1/forthQuestionViewController.swift; sourceTree = "<group>"; };
+		310048BF1C6FC6B80090BBF8 /* Lincoln_Bascom_12_1908.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Lincoln_Bascom_12_1908.jpg; path = ../../../../../Patron/Documents/HomeWork_1/HomeWork1/HomeWork1/Lincoln_Bascom_12_1908.jpg; sourceTree = "<group>"; };
 		31DC368A1C694B7B00F2C045 /* HomeWork1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeWork1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31DC368D1C694B7B00F2C045 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31DC368F1C694B7B00F2C045 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,12 +109,18 @@
 		31DC368C1C694B7B00F2C045 /* HomeWork1 */ = {
 			isa = PBXGroup;
 			children = (
+				310048BF1C6FC6B80090BBF8 /* Lincoln_Bascom_12_1908.jpg */,
 				31DC368D1C694B7B00F2C045 /* AppDelegate.swift */,
 				31DC368F1C694B7B00F2C045 /* ViewController.swift */,
 				31DC36911C694B7B00F2C045 /* Main.storyboard */,
 				31DC36941C694B7B00F2C045 /* Assets.xcassets */,
 				31DC36961C694B7B00F2C045 /* LaunchScreen.storyboard */,
 				31DC36991C694B7B00F2C045 /* Info.plist */,
+				310048B51C6FB9C20090BBF8 /* firstQuestionViewController.swift */,
+				310048B71C6FBCAE0090BBF8 /* secondQuestionViewController.swift */,
+				310048B91C6FBD4E0090BBF8 /* thirdQuestionViewController.swift */,
+				310048BB1C6FBD700090BBF8 /* displayFinalResultViewController.swift */,
+				310048BD1C6FBE270090BBF8 /* forthQuestionViewController.swift */,
 			);
 			path = HomeWork1;
 			sourceTree = "<group>";
@@ -232,6 +250,7 @@
 				31DC36981C694B7B00F2C045 /* LaunchScreen.storyboard in Resources */,
 				31DC36951C694B7B00F2C045 /* Assets.xcassets in Resources */,
 				31DC36931C694B7B00F2C045 /* Main.storyboard in Resources */,
+				310048C01C6FC6B80090BBF8 /* Lincoln_Bascom_12_1908.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +275,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				310048BE1C6FBE270090BBF8 /* forthQuestionViewController.swift in Sources */,
+				310048B81C6FBCAE0090BBF8 /* secondQuestionViewController.swift in Sources */,
 				31DC36901C694B7B00F2C045 /* ViewController.swift in Sources */,
+				310048B61C6FB9C20090BBF8 /* firstQuestionViewController.swift in Sources */,
+				310048BC1C6FBD700090BBF8 /* displayFinalResultViewController.swift in Sources */,
+				310048BA1C6FBD4E0090BBF8 /* thirdQuestionViewController.swift in Sources */,
 				31DC368E1C694B7B00F2C045 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,6 +508,7 @@
 				31DC36B41C694B7B00F2C045 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		31DC36B51C694B7B00F2C045 /* Build configuration list for PBXNativeTarget "HomeWork1Tests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +517,7 @@
 				31DC36B71C694B7B00F2C045 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		31DC36B81C694B7B00F2C045 /* Build configuration list for PBXNativeTarget "HomeWork1UITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +526,7 @@
 				31DC36BA1C694B7B00F2C045 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
