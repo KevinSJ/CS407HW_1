@@ -27,6 +27,9 @@ class secondQuestionViewController: UIViewController {
         q2Answer.text = ""
     }
 
+    @IBAction func btnNextPush(sender: AnyObject) {
+        self.performSegueWithIdentifier("toThirdQuestion", sender: self)
+    }
     
     // MARK: - Navigation
 

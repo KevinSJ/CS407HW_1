@@ -9,6 +9,7 @@
 import UIKit
 
 class forthQuestionViewController: UIViewController {
+    var answers:[String] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()

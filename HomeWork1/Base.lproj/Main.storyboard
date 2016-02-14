@@ -24,7 +24,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Who is the man in the picture?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mQ-js-kfy">
                                 <rect key="frame" x="184" y="434" width="232" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UHg-Cv-LiC">
@@ -110,7 +110,7 @@
                                 <string key="text">When was he born?
 (Give year and Month as MM-YYYY)</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xR2-aX-Rx9">
@@ -143,6 +143,9 @@
                                     <constraint firstAttribute="height" constant="30" id="aDW-cr-ihG"/>
                                 </constraints>
                                 <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="btnNextPush:" destination="YgP-xk-m99" eventType="touchUpInside" id="tgq-GZ-5Ay"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -181,10 +184,64 @@
                     <view key="view" contentMode="scaleToFill" id="D8J-XT-mAb">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lK7-mf-IeL">
+                                <rect key="frame" x="149" y="165" width="302" height="41"/>
+                                <string key="text">Where did he made his famous speech 
+during American Civil war?</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mIX-CS-Gym">
+                                <rect key="frame" x="252" y="285" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="b1r-eZ-iPd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="445-gX-Esv" id="tLd-dS-SUF"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yu3-0N-ENC">
+                                <rect key="frame" x="242" y="367" width="36" height="30"/>
+                                <state key="normal" title="Clear"/>
+                                <connections>
+                                    <action selector="btnClearPush:" destination="445-gX-Esv" eventType="touchUpInside" id="Jtd-iq-hGU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dbz-Yq-8xS">
+                                <rect key="frame" x="328" y="367" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="btnNextPush:" destination="445-gX-Esv" eventType="touchUpInside" id="sPT-lz-hjx"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mIX-CS-Gym" firstAttribute="centerY" secondItem="D8J-XT-mAb" secondAttribute="centerY" id="4Bh-vf-LXT"/>
+                            <constraint firstItem="lK7-mf-IeL" firstAttribute="top" secondItem="OX5-m6-7nw" secondAttribute="bottom" constant="101" id="SDg-3n-mkd"/>
+                            <constraint firstItem="Dbz-Yq-8xS" firstAttribute="centerX" secondItem="D8J-XT-mAb" secondAttribute="centerX" constant="44" id="TI5-L9-1HN"/>
+                            <constraint firstItem="lK7-mf-IeL" firstAttribute="centerX" secondItem="D8J-XT-mAb" secondAttribute="centerX" id="UUQ-Wi-82g"/>
+                            <constraint firstItem="Yu3-0N-ENC" firstAttribute="top" secondItem="mIX-CS-Gym" secondAttribute="bottom" constant="52" id="b5h-1k-JKO"/>
+                            <constraint firstItem="Dbz-Yq-8xS" firstAttribute="leading" secondItem="Yu3-0N-ENC" secondAttribute="trailing" constant="50" id="dEH-84-LWX"/>
+                            <constraint firstItem="Yu3-0N-ENC" firstAttribute="baseline" secondItem="Dbz-Yq-8xS" secondAttribute="baseline" id="n3X-Wa-5lb"/>
+                            <constraint firstItem="Yu3-0N-ENC" firstAttribute="leading" secondItem="D8J-XT-mAb" secondAttribute="leading" constant="242" id="nG3-A7-qeI"/>
+                            <constraint firstItem="mIX-CS-Gym" firstAttribute="centerX" secondItem="lK7-mf-IeL" secondAttribute="centerX" id="uY1-1j-jVT"/>
+                            <constraint firstItem="Dbz-Yq-8xS" firstAttribute="centerX" secondItem="Yu3-0N-ENC" secondAttribute="centerX" constant="84" id="wsh-Vn-8Q0"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="nG3-A7-qeI"/>
+                                <exclude reference="wsh-Vn-8Q0"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Question #3" id="yRs-FB-hpd"/>
                     <connections>
+                        <outlet property="q3Answer" destination="mIX-CS-Gym" id="ifT-gc-xPI"/>
                         <segue destination="Xch-nZ-OIs" kind="show" identifier="toForthQuestion" id="wFY-cl-TPe"/>
                     </connections>
                 </viewController>
@@ -192,7 +249,7 @@
             </objects>
             <point key="canvasLocation" x="4760" y="-607"/>
         </scene>
-        <!--Question #4-->
+        <!--Bonus Question-->
         <scene sceneID="8Jv-Td-qwn">
             <objects>
                 <viewController id="Xch-nZ-OIs" customClass="forthQuestionViewController" customModule="HomeWork1" customModuleProvider="target" sceneMemberID="viewController">
@@ -203,9 +260,68 @@
                     <view key="view" contentMode="scaleToFill" id="RRT-c2-sua">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EgQ-pP-cU9">
+                                <rect key="frame" x="82" y="191" width="436" height="217"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="217" id="CYv-3f-b60"/>
+                                    <constraint firstAttribute="width" constant="436" id="j32-Pb-50t"/>
+                                </constraints>
+                                <string key="text">A. Abraham Lincoln was the 15th President of 
+the United States of America.
+
+B. Abraham Lincoln and Charles Darwin 
+was born on the same day. 
+
+C. The Gettysburg Address was made in 1873. 
+
+D. Abraham Lincoln is the tallest President so far
+
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your answer is:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R3E-WL-zfO">
+                                <rect key="frame" x="0.0" y="0.0" width="116" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lSI-DY-tf0">
+                                <rect key="frame" x="0.0" y="0.0" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which of the following statement is correct?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NdQ-Pb-aXq">
+                                <rect key="frame" x="132" y="128" width="337" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" showsSelectionIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lbe-fx-hL2">
+                                <rect key="frame" x="271" y="416" width="198" height="99"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="198" id="zmb-0S-P2l"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="Xch-nZ-OIs" id="cVO-dt-pg2"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Lbe-fx-hL2" firstAttribute="top" secondItem="EgQ-pP-cU9" secondAttribute="bottom" constant="8" id="Zcg-AH-xNL"/>
+                            <constraint firstItem="EgQ-pP-cU9" firstAttribute="leading" secondItem="RRT-c2-sua" secondAttribute="leadingMargin" constant="62" id="Zto-5M-Xcb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Lbe-fx-hL2" secondAttribute="trailing" constant="111" id="gvh-hL-tij"/>
+                            <constraint firstItem="EgQ-pP-cU9" firstAttribute="centerX" secondItem="RRT-c2-sua" secondAttribute="centerX" id="iWt-cT-EOs"/>
+                            <constraint firstItem="EgQ-pP-cU9" firstAttribute="centerX" secondItem="NdQ-Pb-aXq" secondAttribute="centerX" id="mM9-D3-qGo"/>
+                            <constraint firstItem="EgQ-pP-cU9" firstAttribute="top" secondItem="RRT-c2-sua" secondAttribute="top" constant="191" id="pNk-Vs-Xo5"/>
+                            <constraint firstItem="EgQ-pP-cU9" firstAttribute="top" secondItem="NdQ-Pb-aXq" secondAttribute="bottom" constant="42" id="xH7-Ab-xSO"/>
+                            <constraint firstAttribute="bottom" secondItem="Lbe-fx-hL2" secondAttribute="bottom" constant="85" id="ySW-dU-Jlj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EgQ-pP-cU9" secondAttribute="trailing" constant="62" id="zzl-XV-rf0"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Question #4" id="cUi-E2-IUG"/>
+                    <navigationItem key="navigationItem" title="Bonus Question" id="cUi-E2-IUG"/>
                     <connections>
                         <segue destination="Oue-yI-5Qu" kind="show" identifier="showFinalResult" id="knt-PF-YsT"/>
                     </connections>
