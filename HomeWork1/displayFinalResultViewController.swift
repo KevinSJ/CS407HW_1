@@ -9,10 +9,11 @@
 import UIKit
 
 class displayFinalResultViewController: UIViewController {
+    var answers:[String] = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        checkResults(answers)
         // Do any additional setup after loading the view.
     }
 
@@ -21,6 +22,14 @@ class displayFinalResultViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func checkResults(answers:[String]) -> Int{
+        var i:Int = 1
+        for answer in answers{
+            print("Answers" + answer)
+            i++
+        }
+        return i
+    }
 
     /*
     // MARK: - Navigation
