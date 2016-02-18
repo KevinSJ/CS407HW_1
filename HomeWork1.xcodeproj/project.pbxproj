@@ -13,6 +13,7 @@
 		310048BC1C6FBD700090BBF8 /* displayFinalResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310048BB1C6FBD700090BBF8 /* displayFinalResultViewController.swift */; };
 		310048BE1C6FBE270090BBF8 /* forthQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310048BD1C6FBE270090BBF8 /* forthQuestionViewController.swift */; };
 		310048C01C6FC6B80090BBF8 /* Lincoln_Bascom_12_1908.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 310048BF1C6FC6B80090BBF8 /* Lincoln_Bascom_12_1908.jpg */; };
+		31504E751C7541DB0016DE1C /* finalResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31504E741C7541DB0016DE1C /* finalResultController.swift */; };
 		31DC368E1C694B7B00F2C045 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DC368D1C694B7B00F2C045 /* AppDelegate.swift */; };
 		31DC36901C694B7B00F2C045 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DC368F1C694B7B00F2C045 /* ViewController.swift */; };
 		31DC36931C694B7B00F2C045 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31DC36911C694B7B00F2C045 /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 		310048BB1C6FBD700090BBF8 /* displayFinalResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = displayFinalResultViewController.swift; path = ../../../../../Patron/Documents/HomeWork_1/HomeWork1/HomeWork1/displayFinalResultViewController.swift; sourceTree = "<group>"; };
 		310048BD1C6FBE270090BBF8 /* forthQuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = forthQuestionViewController.swift; path = ../../../../../Patron/Documents/HomeWork_1/HomeWork1/HomeWork1/forthQuestionViewController.swift; sourceTree = "<group>"; };
 		310048BF1C6FC6B80090BBF8 /* Lincoln_Bascom_12_1908.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Lincoln_Bascom_12_1908.jpg; path = ../../../../../Patron/Documents/HomeWork_1/HomeWork1/HomeWork1/Lincoln_Bascom_12_1908.jpg; sourceTree = "<group>"; };
+		31504E741C7541DB0016DE1C /* finalResultController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = finalResultController.swift; path = ../../../../../Patron/Documents/HomeWork_1/HomeWork1/HomeWork1/finalResultController.swift; sourceTree = "<group>"; };
 		31DC368A1C694B7B00F2C045 /* HomeWork1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeWork1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31DC368D1C694B7B00F2C045 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31DC368F1C694B7B00F2C045 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				310048B71C6FBCAE0090BBF8 /* secondQuestionViewController.swift */,
 				310048B91C6FBD4E0090BBF8 /* thirdQuestionViewController.swift */,
 				310048BB1C6FBD700090BBF8 /* displayFinalResultViewController.swift */,
+				31504E741C7541DB0016DE1C /* finalResultController.swift */,
 				310048BD1C6FBE270090BBF8 /* forthQuestionViewController.swift */,
 			);
 			path = HomeWork1;
@@ -278,6 +281,7 @@
 				310048BE1C6FBE270090BBF8 /* forthQuestionViewController.swift in Sources */,
 				310048B81C6FBCAE0090BBF8 /* secondQuestionViewController.swift in Sources */,
 				31DC36901C694B7B00F2C045 /* ViewController.swift in Sources */,
+				31504E751C7541DB0016DE1C /* finalResultController.swift in Sources */,
 				310048B61C6FB9C20090BBF8 /* firstQuestionViewController.swift in Sources */,
 				310048BC1C6FBD700090BBF8 /* displayFinalResultViewController.swift in Sources */,
 				310048BA1C6FBD4E0090BBF8 /* thirdQuestionViewController.swift in Sources */,
