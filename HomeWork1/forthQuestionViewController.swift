@@ -56,7 +56,7 @@ class forthQuestionViewController: UIViewController,UIPickerViewDataSource,UIPic
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         if(segue.identifier == "showFinalResult"){
-            let vc:finalResultController = segue.destinationViewController as! finalResultController
+            let vc:displayFinalResultViewController = segue.destinationViewController as! displayFinalResultViewController
             vc.answers = self.answers
             vc.answers.append(q4Answer)
         }
