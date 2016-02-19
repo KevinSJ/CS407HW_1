@@ -41,7 +41,7 @@ class displayFinalResultViewController: UIViewController {
     }
     
     @IBAction func btnRestartPush(sender: AnyObject) {
-        self.performSegueWithIdentifier("backToHomeScreen", sender: self)
+            self.navigationController?.popToRootViewControllerAnimated(true)
     }
     /*
     // MARK: - Navigation
