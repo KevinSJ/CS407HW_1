@@ -342,7 +342,7 @@ the Gettysburg Address?</string>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="64m-6a-Oah">
                                 <rect key="frame" x="276" y="219" width="48" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WgN-43-8sW">
@@ -382,12 +382,6 @@ the Gettysburg Address?</string>
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to my first iOS App.  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HBP-Cw-ArM">
-                                <rect key="frame" x="188" y="184" width="224" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJb-XU-RMV">
                                 <rect key="frame" x="281" y="460" width="39" height="30"/>
                                 <state key="normal" title="Start!"/>
@@ -395,14 +389,26 @@ the Gettysburg Address?</string>
                                     <action selector="buttonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3p0-pr-KLa"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to my first iOS App.  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HBP-Cw-ArM">
+                                <rect key="frame" x="188" y="184" width="224" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="HBP-Cw-ArM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="164" id="Ei2-Gj-Oil"/>
+                            <constraint firstItem="HBP-Cw-ArM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9bS-PF-RWD"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qJb-XU-RMV" secondAttribute="bottom" constant="110" id="HVM-Su-7NM"/>
+                            <constraint firstItem="HBP-Cw-ArM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-105.5" id="tlv-fE-fVD"/>
                             <constraint firstItem="HBP-Cw-ArM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uE0-pt-Mko"/>
                             <constraint firstItem="qJb-XU-RMV" firstAttribute="centerX" secondItem="HBP-Cw-ArM" secondAttribute="centerX" id="ywS-l1-UcF"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="uE0-pt-Mko"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <segue destination="2Ju-X2-d4V" kind="show" identifier="toNavController" id="4Ik-rb-R8Y"/>

@@ -28,7 +28,8 @@ class secondQuestionViewController: UIViewController {
     }
 
     @IBAction func btnNextPush(sender: AnyObject) {
-        self.performSegueWithIdentifier("toThirdQuestion", sender: self)
+//        self.navigationController?.pushViewController(self, animated:true)
+    self.performSegueWithIdentifier("toThirdQuestion", sender: self)
     }
     
     // MARK: - Navigation

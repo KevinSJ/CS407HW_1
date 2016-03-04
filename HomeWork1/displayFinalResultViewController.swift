@@ -21,7 +21,7 @@ class displayFinalResultViewController: UIViewController {
         let correctAnswers = ["Abraham Lincoln","02-12-1806","Gettysburg","54"]
         let correct = compareResults(self.answers, correctAnswers: correctAnswers)
         let resultPercentage = Double(correct)/4.0*100
-        finalScore.text = "You get "+String(resultPercentage) + String(" %")
+        finalScore.text = "You got "+String(resultPercentage) + String(" %")
         
     }
 
